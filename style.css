@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+}
+
+html {
+    background: url("italian-landscape-mountains-nature.jpg") no-repeat fixed center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: sans-serif;
+  }
+  
+  /* ------------------------------------ */
+  a {
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+  }
+  
+  /* ------------------------------------ */
+  h1,h2,h3,h4,h5,h6 {margin: 0px;}
+  
+  p {margin: 0px;}
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  /* ------------------------------------ */
+  input {
+    display: block;
+      outline: none;
+      border: none !important;
+  }
+  
+  textarea {
+    display: block;
+    outline: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  /* ------------------------------------ */
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+  
+  
+  /*//////////////////////////////////////////////////////////////////*/
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Table ]*/
+  table {
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+  }
+  
+  th, td {
+    font-weight: unset;
+    padding-right: 10px;
+  }
+  
+  .column100 {
+    width: 130px;
+    padding-left: 25px;
+  }
+  
+  .column100.column1 {
+    width: 265px;
+    padding-left: 42px;
+  }
+  
+  .row100.head th {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  
+  .row100 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+
+  .table100.ver3 tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  tr:hover {
+    background-color: rgba(255,255,255,0.8);
+    border-right: none;
+    border-left: none;
+  }
+  
+  .table100.ver3 td {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: rgb(20,20,20);
+    line-height: 1.4;
+  }
+
+  .table100.ver3 td:hover {
+    background-color: white;
+  }

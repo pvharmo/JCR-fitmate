@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>Données</title>
+  <meta name="description" content="Données">
+  <meta name="author" content="Jonathan Caron-Roberge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script src="js/script.js"></script>
+
+<!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  
+</head>
+
+<body>
+    <div id="top-bar">
+        <input id="data" type="file" />
+        
+        <div>
+            <button onclick="table()">Rapport</button>
+        </div>
+    </div>
+    
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div id="content">
+                <h3 id="name"></h3>
+                <p id="StepsReceived"></p>
+                <p id="stpd"></p>
+                <p id="age"></p>
+                <p id="gender"></p>
+                <p id="height"></p>
+                <p id="weight"></p>
+                <p id="cf"></p>
+            </div>
+        
+                <div class="table100 ver3 m-b-60">
+                    <table id="table" data-vertable="ver3">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" data-column="column1">Temps</th>
+                                <th class="column100 column2" data-column="column2">fR</th>
+                                <th class="column100 column3" data-column="column4">VE</th>
+                                <th class="column100 column4" data-column="column3">VO2</th>
+                                <th class="column100 column5" data-column="column5">VO2/Kg</th>
+                                <th class="column100 column6" data-column="column6">FeO2</th>
+                                <th class="column100 column7" data-column="column7">Phase</th>
+                                <th class="column100 column8" data-column="column8">FC</th>
+                                <th class="column100 column9" data-column="column9">PA</th>
+                                <th class="column100 column10" data-column="column10">Charge</th>
+                                <th class="column100 column11" data-column="column11">Vitesse</th>
+                                <th class="column100 column12" data-column="column12">Pente</th>
+                                <th class="column100 column13" data-column="column13">TA sys</th>
+                                <th class="column100 column14" data-column="column14">TA dia</th>
+                                <th class="column100 column15" data-column="column15">CVE</th>
+                                <!--<th class="column100 column16" data-column="column16">IFP</th>
+                                <th class="column100 column17" data-column="column17">GainO2</th>
+                                <th class="column100 column18" data-column="column18">Kmix</th>-->
+                                <th class="column100 column19" data-column="column19">VE/VO2</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <canvas id="graphs" width="400" height="200"></canvas>
+    <canvas id="vevo2feo2" width="400" height="200"></canvas>
+</body>
+</html>
